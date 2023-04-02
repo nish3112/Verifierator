@@ -16,12 +16,17 @@
 .nav-list{
   flex:10;
 }
-.nav-button{
-  background-color: green;
+.nav-bttn{
+  background-color: #337bba;
   margin-left: 50px;
   border-radius: 10px;
   font-size: 16px;
   padding: 10px;
+}
+
+.nav-bttn:hover{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 .nav-list>ul>li:hover{
@@ -49,9 +54,6 @@
   
 }
 
-.nav-button {
-  background: #0563b4 !important;
-}
 p {
   color: red;
 }
