@@ -1,6 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
+import Lottie from "lottie-react";
+import {useRef} from 'react';
+import tick from '../assets/tick.json';
+import cross from '../assets/cross.json';
 
 const Admin=() => {
     
@@ -8,10 +12,15 @@ const Admin=() => {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const ref = useRef(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
+  };
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
   };
 
   const handleSubmit = (e) => {
@@ -24,6 +33,7 @@ const Admin=() => {
     console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(formValues);
+      handleClick();
     }
   }, [formErrors]);
 
@@ -47,6 +57,7 @@ const Admin=() => {
   };
 
   return (
+    <div>
     <div className="reg-container">
       <form onSubmit={handleSubmit}>
         <h1><Typewriter loop={true} onInit={(typewriter)=>{
@@ -104,6 +115,12 @@ const Admin=() => {
         </div>
       </form>
     </div>
+          <div style={{height: '10rem'}} />
+          <div ref={ref} style={{marginLeft:'590px'}} >
+            <Lottie animationData={tick} loop={true} className="w-[40%] h-[40%] relative z-[5]" />
+          </div>
+      <div style={{height: '155rem'}} />
+      </div>
   );
 }
 

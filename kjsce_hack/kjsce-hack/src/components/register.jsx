@@ -1,6 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
+import Lottie from "lottie-react";
+import {useRef} from 'react';
+import tick from '../assets/tick.json';
+import cross from '../assets/cross.json';
 
 const Register=() => {
     
@@ -8,10 +12,15 @@ const Register=() => {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const ref = useRef(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
+  };
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
   };
 
   const handleSubmit = (e) => {
@@ -24,6 +33,7 @@ const Register=() => {
     console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(formValues);
+      handleClick();
     }
   }, [formErrors]);
 
@@ -47,10 +57,11 @@ const Register=() => {
   };
 
   return (
-    <div className="reg-container">
+    <div>
+      <div className="reg-container">
       <form onSubmit={handleSubmit}>
         <h1><Typewriter loop={true} onInit={(typewriter)=>{
-            typewriter.typeString("Check Registered Device").pauseFor(0).start();
+            typewriter.typeString("Registere Device").pauseFor(0).start();
         }}
         /></h1><br/>
        
@@ -103,8 +114,21 @@ const Register=() => {
           <button className="form-bttn">Submit</button>
         </div>
       </form>
+      </div>
+      <div style={{height: '10rem'}} />
+      <div ref={ref} style={{marginLeft:'590px'}} >
+        {/* <pre>{JSON.stringify(formValues, null, 2)}</pre> */}
+        <Lottie animationData={tick} loop={true} className="w-[40%] h-[40%] relative z-[5]" />
+        {/* <span><h1>Successfully Registered</h1></span> */}
+      </div>
+      <div style={{height: '155rem'}} />
     </div>
   );
 }
 
 export default Register;
+
+
+
+
+   
