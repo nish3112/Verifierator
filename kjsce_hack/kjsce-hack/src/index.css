@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-right{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-list{
+  flex:10;
+}
+.nav-button{
+  background-color: green;
+  margin-left: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.nav-list>ul>li:hover{
+  cursor: pointer;
+  color: orange;
+}
+.reg-container {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+.reg-container > form {
+  padding-left: 20px;
+  border: 2px solid #337bba;
+  width: 70%;
+  padding: 20px;
+  border-radius: 5px;
+  /* background-color: #337bba; */
+  background-color: transparent;
+  
+}
+
+.nav-button {
+  background: #0563b4 !important;
+}
+p {
+  color: red;
+}
+label{
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input,select{
+  width:300px;
+  margin-top: 10px;
+  padding: 7px;
+  border-radius: 7px;
+  
+}
+.ui-form{
+  padding-left: 100px;
+  border: #337bba;
+}
+h1{
+  color: #ffffff;
+  font-size: 28px;;
+  font-weight: 500;
+  text-align: center;
+}
+.form-bttn{
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  width:100px;
+  margin-left: 100px;
+  border: 2px solid #337bba;
+  
+}
+
+.form-bttn:hover{
+  background-color: #337bba;
+  color: white;
+}
