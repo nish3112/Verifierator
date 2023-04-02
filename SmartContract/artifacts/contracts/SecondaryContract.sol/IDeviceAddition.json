@@ -1,0 +1,52 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IDeviceAddition",
+  "sourceName": "contracts/SecondaryContract.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_brand",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_model",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_imeiNumber",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_encryptedSeedPhrase",
+          "type": "bytes32"
+        }
+      ],
+      "name": "addDevice",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getDevices",
+      "outputs": [
+        {
+          "internalType": "bytes32[]",
+          "name": "",
+          "type": "bytes32[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

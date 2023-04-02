@@ -1,0 +1,254 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Hackathon\\SmartContract\\contracts\\console.sol": {
+      "lastModificationDate": 1680339381268,
+      "contentHash": "bb67f663276522f98181e376137a9358",
+      "sourceName": "contracts/console.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">= 0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "C:\\Hackathon\\SmartContract\\contracts\\DeviceActivationAndVerification.sol": {
+      "lastModificationDate": 1680396998899,
+      "contentHash": "dd396c28b31752333478b95c964f4342",
+      "sourceName": "contracts/DeviceActivationAndVerification.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./DeviceAddition.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "DeviceActivationAndVerification",
+        "DeviceAdditionInterface"
+      ]
+    },
+    "C:\\Hackathon\\SmartContract\\contracts\\DeviceAddition.sol": {
+      "lastModificationDate": 1680402888356,
+      "contentHash": "ed2c48ebe518f34d1c23232bd1a11e39",
+      "sourceName": "contracts/DeviceAddition.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DeviceAddition"
+      ]
+    },
+    "C:\\Hackathon\\SmartContract\\contracts\\ImeiCheck.sol": {
+      "lastModificationDate": 1680340224179,
+      "contentHash": "475b92224ec787a8f60196da813b9410",
+      "sourceName": "contracts/ImeiCheck.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ImeiCheck"
+      ]
+    },
+    "C:\\Hackathon\\SmartContract\\contracts\\ImeiCheckUpdated.sol": {
+      "lastModificationDate": 1680361342196,
+      "contentHash": "12b77ed09ae46f23241b9c722428d261",
+      "sourceName": "contracts/ImeiCheckUpdated.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ImeiCheckUpdated"
+      ]
+    },
+    "C:\\Hackathon\\SmartContract\\contracts\\ImeiCheckUpdated2.sol": {
+      "lastModificationDate": 1680381835991,
+      "contentHash": "3c01cf8fe88c7df485591253eb3faf43",
+      "sourceName": "contracts/ImeiCheckUpdated2.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ImeiCheckUpdated2"
+      ]
+    },
+    "C:\\Hackathon\\SmartContract\\contracts\\SecondaryContract.sol": {
+      "lastModificationDate": 1680402966050,
+      "contentHash": "094d75828a06e43ebe60c31a7f542d5e",
+      "sourceName": "contracts/SecondaryContract.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IDeviceAddition",
+        "SecondaryContract"
+      ]
+    }
+  }
+}
