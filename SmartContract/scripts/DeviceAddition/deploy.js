@@ -7,12 +7,12 @@ async function main() {
 
   const authorizedWalletIds = ["0xC346eA0fD7007269e62Ba79eac3bd448e4f3b4d2"]; // replace with actual wallet addresses
 
-  const ImeiCheckUpdated = await hre.ethers.getContractFactory("ImeiCheckUpdated");
-  const imeiCheckUpdated = await ImeiCheckUpdated.deploy(authorizedWalletIds);
+  const DeviceAddition = await hre.ethers.getContractFactory("DeviceAddition");
+  const deviceAddition = await DeviceAddition.deploy(authorizedWalletIds);
 
-  await imeiCheckUpdated.deployed();
+  await deviceAddition.deployed();
 
-  console.log("Contract deployed to:", imeiCheckUpdated.address);
+  console.log("Contract deployed to:", deviceAddition.address);
 }
 
 main()
