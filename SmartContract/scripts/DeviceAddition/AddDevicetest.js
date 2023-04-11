@@ -21,4 +21,3 @@ async function addDevice() {
   }
 
 addDevice();
-  

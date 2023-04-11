@@ -94,28 +94,28 @@ function containsValue(all_devices, hashed_val) {
   return all_devices.includes(hashed_val);
 }
 
-(async function () {
-  const decision = await containsValue(all_devices, hashed_val);
+// (async function () {
+//   const decision = await containsValue(all_devices, hashed_val);
 
-  if (decision == true) {
-    // Send the eth transaction on chain 2
-    deviceAdditionContract.methodsif (decision == true) {
-      try {
-        // Wait for the decision variable
-        await Promise.resolve(decision);
+//   if (decision == true) {
+//     // Send the eth transaction on chain 2
+//     deviceAdditionContract.methodsif (decision == true) {
+//       try {
+//         // Wait for the decision variable
+//         await Promise.resolve(decision);
     
-        // Send the eth transaction on chain 2
-        const tx = await secondaryContract.methods
-          .addDevice(brand, model, imeiNumber, encryptedSeedPhrase)
-          .send({ from: "0x...", gas: 100000 });
+//         // Send the eth transaction on chain 2
+//         const tx = await secondaryContract.methods
+//           .addDevice(brand, model, imeiNumber, encryptedSeedPhrase)
+//           .send({ from: "0x...", gas: 100000 });
     
-        console.log("Transaction hash:", tx.transactionHash);
-        console.log("Transaction receipt:", tx);
-      } catch (error) {
-        console.error("Error sending transaction:", error);
-      }
-  }else {
-      // Show failed symbol
-    }
+//         console.log("Transaction hash:", tx.transactionHash);
+//         console.log("Transaction receipt:", tx);
+//       } catch (error) {
+//         console.error("Error sending transaction:", error);
+//       }
+  // }else {
+  //     // Show failed symbol
+  //   }
     
-  }
+  // }
